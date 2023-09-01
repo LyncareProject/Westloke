@@ -10,6 +10,15 @@ app.use(cors());
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
+app.enable('trust proxy');
+app.use(function(req, res, next){
+        if(!req.secure){
+                res.redirect("https://"+ req.headers.host + req.url);
+        }else{
+                next();
+        }
+});
+
 const apiRouter = require('./routes/index');
 
 // React 빌드된 정적 파일을 'build' 디렉토리에서 제공합니다.
