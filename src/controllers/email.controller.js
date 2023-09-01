@@ -66,7 +66,7 @@ exports.postEmail = async (req, res) => {
                 '>
                 <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px;'>Westloke</h3> 
                 <h2 style='font-size : 26px; font-weight : 800; margin-bottom : 30px;'>Your Order has been Received Succesfully</h2> 
-                <h2 style='font-size : 16px; font-weight : 800; margin-bottom : 10px; color: #989898;'>The original price is <span style='color : #000;'>$ ${ parseInt(Price).toLocaleString() }</span>, but you bought it at a discounted price <span style='color : #000;'>$ ${parseInt(parseInt(Price) * 0.85).toLocaleString() }</span>. </h2> 
+                <h2 style='font-size : 16px; font-weight : 800; margin-bottom : 10px; color: #989898;'>The original price is $ ${ parseInt(Price).toLocaleString() }, but you bought it at a discounted price $ ${parseInt(parseInt(Price) * 0.85).toLocaleString() }. </h2> 
                 <h2 style='font-size : 20px; font-weight : 800; margin-bottom : 30px;color: #777;'>You saved a total of <span style='color : #EC0000;'>$ ${ (parseInt(Price) - parseInt(parseInt(Price) * 0.85)).toLocaleString() }</span></h2> 
                 <p style='font-size : 18px; margin-bottom : 30px'>Order By <span style='font-weight : 600; margin-right: 10px;'>${ email }</span></p>      
                 <img style='margin-bottom : 30px;' src=${ handleModel() } alt="Inline Image" />
