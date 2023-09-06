@@ -66,7 +66,7 @@ exports.postEmail = async (req, res) => {
                         box-sizing: border-box;
                     '>
                     <h3 style='font-size : 26px; font-weight : 400; margin-bottom : 30px;'>Westloke</h3> 
-                    <h2 style='font-size : 26px; font-weight : 800; margin-bottom : 30px;'>Your Order has been Received Succesfully</h2> 
+                    <h2 style='font-size : 26px; font-weight : 800; margin-bottom : 30px;'>Your inquiry has been Received Succesfully</h2> 
                     <p style='font-size : 18px; margin-bottom : 30px; color: #CACACA'>Order By <span style='font-weight : 600; margin-right: 10px;'>${ email }</span></p>      
                     <h2 style='font-size : 18px; font-weight : 800; margin-bottom : 30px;color: #000;'>You just Saved <span style='color : #CAAC72;'>$ ${ (parseInt(Price) - parseInt(parseInt(Price) * 0.85)).toLocaleString() }</span></h2> 
                     <img style='margin-bottom : 30px;' src=${ handleModel() } alt="Inline Image" />
